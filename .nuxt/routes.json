@@ -1,0 +1,44 @@
+[
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_7d616d74"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/projects/index.vue",
+    "chunkName": "pages/projects/index",
+    "_name": "_fef89668"
+  },
+  {
+    "name": "services",
+    "path": "/services",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/services/index.vue",
+    "chunkName": "pages/services/index",
+    "_name": "_b6b3c0a0"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_67a602d3"
+  },
+  {
+    "name": "blog-blog",
+    "path": "/blog/:blog",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/blog/_blog.vue",
+    "chunkName": "pages/blog/_blog",
+    "_name": "_e90c84ba"
+  },
+  {
+    "name": "projects-project",
+    "path": "/projects/:project",
+    "component": "/Users/cameron/Code/capitalwebcompany/pages/projects/_project.vue",
+    "chunkName": "pages/projects/_project",
+    "_name": "_1e2a3c60"
+  }
+]

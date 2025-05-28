@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+    {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+    <title>{{pageTitle}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="{{pageDescription}}"
+    />
+
+    <meta property="og:title" content="{{pageTitle}}<" />
+    <meta property="og:description" content="{{pageDescription}}" />
+    <meta property="og:image" content="https://www.example.com/image.jpg" />
+    <meta property="og:url" content="https://capitalwebcompany.com{{page.url}}}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Awesome Page Title" />
+    <meta name="twitter:description" content="A brief description of my page." />
+    <meta name="twitter:image" content="https://www.example.com/image.jpg" />
+
+    <link rel="icon" href="{{ '/favicon.png' | url }}" />
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | url }}" />
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>  
+      // Remove this script if you don't need the dark mode toggle  
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';      
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };   
+
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload()
+      }
+    </script>
+
+  </head>
+  <body class="dark:bg-zinc-800 dark:text-white">
+    {% include "../components/navigation.njk" %}
+    <main class="p-12 ">
+
+      {{ content | safe }}
+    </main>
+    <!-- <script src="/assets/main.js"></script> -->
+    <script src="{{ '/assets/main.js' | url }}"></script>
+    {% if schema %}<script type="application/ld+json">{{ schema|safe }}</script> {% endif %}
+  </body>
+</html>

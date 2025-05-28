@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "name": "E-Mail",
+            "link": "mailto:websites@capitalwebcompany.com",
+            "icon": true
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/audetcameron",
+            "icon": false
+        }
+    ]
+}
