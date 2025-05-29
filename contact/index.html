@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head><title>Contact | Capital Web Company - New Hampshire Small Business Website Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Because sometimes you just need a simple website. Who you are, what you do, and why people should care. Let&amp;#39;s make it simple."
+    />
+
+    <meta property="og:title" content="Contact | Capital Web Company - New Hampshire Small Business Website Solutions<" />
+    <meta property="og:description" content="Because sometimes you just need a simple website. Who you are, what you do, and why people should care. Let&amp;#39;s make it simple." />
+    <meta property="og:image" content="https://capitalwebcompany.com/img/og-image.png" />
+    <meta property="og:url" content="https://capitalwebcompany.com/contact/}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Capital Web Company - New Hampshire Small Business Website Solutions" />
+    <meta name="twitter:description" content="Because sometimes you just need a simple website. Who you are, what you do, and why people should care. Let&amp;#39;s make it simple." />
+    <meta name="twitter:image" content="https://capitalwebcompany.com/img/og-image.png" />
+
+    <link rel="icon" href="/capital-web-company/favicon.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/capital-web-company/assets/main.css" />
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>  
+      // Remove this script if you don't need the dark mode toggle  
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';      
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };   
+
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload()
+      }
+    </script>
+
+  </head>
+  <body class="bg-[#FCFBFA] dark:bg-zinc-800 dark:text-white ">
+    <nav x-data="{ isOpen: false }" class="relative shadow dark:bg-gray-800">
+  <div class="container-full px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+    <div class="flex items-center justify-between">
+      <div>
+       <a class="w-full max-w-32" href="/" >
+          <img class=" "
+                    src="/capital-web-company/img/logo.png"
+                    alt="Capital Web Company logo">
+        <p class="font-normal text-xs tracking-tight">
+          Because sometimes you just need a simple website or tech support
+        </p>
+      </a>
+      </div>
+
+
+      <!-- Mobile menu button -->
+      <div class="flex md:hidden lg:hidden">
+        <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+          <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          </svg>
+
+          <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+ 
+
+    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+    <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+      <div class="flex flex-col md:flex-row md:mx-6">
+        
+        <a  href="/work/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400
+            ">
+            Work
+          </a>
+        
+        <a  href="/blog/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400
+            ">
+            Blog
+          </a>
+        
+        <a  href="/contact/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              bg-black text-white
+            ">
+            Contact
+          </a>
+        
+      </div>
+
+      <div class="flex justify-center md:block">
+       <button class="text-zinc-700  hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg text-sm p-2.5" onclick="toggleDarkMode()" id="theme-toggle" type="button">
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" > <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" ></path> </svg>
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden dark:block text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" > <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" ></path> </svg>
+      </button>
+
+      
+      
+
+                
+
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+    <main class="p-12 ">
+
+      <div class="flex items-center py-4 overflow-x-auto whitespace-nowrap">
+    <a href="#" class="text-gray-600 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+        </svg>
+    </a>
+
+    <span class="mx-5 text-gray-500 dark:text-gray-300">
+        /
+    </span>
+
+    <a href="/contact" class="text-blue-600 dark:text-blue-400 hover:underline">
+        Contact
+    </a>
+
+
+
+
+</div>
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="container grid gap-8 px-6 py-12 mx-auto lg:grid-cols-3">
+    <div>
+      <p class="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
+
+      <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">We’d love to hear from you</h1>
+
+      <p class="mt-3 text-gray-500 dark:text-gray-400">Our friendly team is always here to chat.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2 ">
+      
+      <div class="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
+
+        
+        <span class="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+        </span>
+        
+
+        <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Chat via E-Mail</h2>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Speak to our friendly team.</p>
+        
+        <div class="mt-4 text-sm text-blue-500 dark:text-blue-400">
+          <object class="email" width="38" height="30" data="/capital-web-company/img/email.svg" type="image/svg+xml"></object>
+        </div>
+        
+      </div>
+      
+      <div class="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
+
+        
+
+        <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Chat via GitHub</h2>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Speak to our friendly team.</p>
+        
+        <p class="mt-2 text-sm text-blue-500 dark:text-blue-400"><a href="https://github.com/audetcameron">GitHub</a></p>
+        
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+<!-- <p class="mt-4">☝️ This page gets its content from <code>src/_data/contact.json</code></p> -->
+
+    </main>
+
+
+
+    <footer class="rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+            <script>document.write(/\d{4}/.exec(Date())[0])</script>
+           <a href="https://capitalwebcompany.com/" class="hover:underline">Capital Web Company</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="/work" class="hover:underline me-4 md:me-6">Work</a>
+            </li>
+            <li>
+                <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="/contact" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+
+    <!-- <script src="/assets/main.js"></script> -->
+    <script src="/capital-web-company/assets/main.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head><title>Keep It Simple - Why Small Businesses Win with Simple Websites | Capital Web Company - New Hampshire Small Business Website Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="You can take a dump in a box and mark it ‘guaranteed,’ but all you&amp;#39;re buying is a guaranteed piece of crap."
+    />
+
+    <meta property="og:title" content="Keep It Simple - Why Small Businesses Win with Simple Websites | Capital Web Company - New Hampshire Small Business Website Solutions<" />
+    <meta property="og:description" content="You can take a dump in a box and mark it ‘guaranteed,’ but all you&amp;#39;re buying is a guaranteed piece of crap." />
+    <meta property="og:image" content="https://captialwebcompany.com/img/og-image.png" />
+    <meta property="og:url" content="https://capitalwebcompany.com/blog/posts/keep-it-simple-why-small-business-wins-with-simple-websites/}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Keep It Simple - Why Small Businesses Win with Simple Websites | Capital Web Company - New Hampshire Small Business Website Solutions" />
+    <meta name="twitter:description" content="You can take a dump in a box and mark it ‘guaranteed,’ but all you&amp;#39;re buying is a guaranteed piece of crap." />
+    <meta name="twitter:image" content="https://captialwebcompany.com/img/og-image.png" />
+
+    <link rel="icon" href="/capital-web-company/favicon.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/capital-web-company/assets/main.css" />
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>  
+      // Remove this script if you don't need the dark mode toggle  
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';      
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };   
+
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload()
+      }
+    </script>
+
+  </head>
+  <body class="bg-[#FCFBFA] dark:bg-zinc-800 dark:text-white ">
+    <nav x-data="{ isOpen: false }" class="relative shadow dark:bg-gray-800">
+  <div class="container-full px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+    <div class="flex items-center justify-between">
+      <div>
+       <a class="w-full max-w-32" href="/" >
+          <img class=" "
+                    src="/capital-web-company/img/logo.png"
+                    alt="Capital Web Company logo">
+        <p class="font-normal text-xs tracking-tight">
+          Because sometimes you just need a simple website or tech support
+        </p>
+      </a>
+      </div>
+
+
+      <!-- Mobile menu button -->
+      <div class="flex md:hidden lg:hidden">
+        <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+          <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          </svg>
+
+          <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+ 
+
+    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+    <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+      <div class="flex flex-col md:flex-row md:mx-6">
+        
+        <a  href="/work/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400
+            ">
+            Work
+          </a>
+        
+        <a  href="/blog/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              bg-black text-white
+            ">
+            Blog
+          </a>
+        
+        <a  href="/contact/" class="my-2  transition-colors duration-300 transform md:mx-4 md:my-0
+            
+              text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400
+            ">
+            Contact
+          </a>
+        
+      </div>
+
+      <div class="flex justify-center md:block">
+       <button class="text-zinc-700  hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg text-sm p-2.5" onclick="toggleDarkMode()" id="theme-toggle" type="button">
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" > <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" ></path> </svg>
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden dark:block text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" > <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" ></path> </svg>
+      </button>
+
+      
+      
+
+                
+
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+    <main class="p-12 ">
+
+      <time>01-06-25</time>
+
+<article class=" bg-white dark:bg-zinc-800 dark:text-white prose lg:prose prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600 prose-ul:p4">
+
+<!-- <h1 class="text-3xl mb-8">Keep It Simple - Why Small Businesses Win with Simple Websites</h1> -->
+
+<h1>Keep It Simple: Why Small Businesses Win with Simple Websites</h1>
+<p>There’s a classic line from the movie <em>Tommy Boy</em> that gets laughs — but also makes a great point about quality over flash. While selling brake pads, Tommy says:</p>
+<blockquote>
+<p>&quot;You can take a dump in a box and mark it ‘guaranteed,’ but all you're buying is a guaranteed piece of crap.&quot;</p>
+</blockquote>
+<p>That quote sticks with you — because it's true. The flashiest packaging doesn’t always deliver the best product. And the same applies to websites.</p>
+<p>At <strong>Capital Web Company</strong>, we believe your website doesn’t need to be overloaded with animations, complex layouts, or slow-loading graphics to be effective. In fact, simpler websites often <em>perform better</em>, especially for small businesses that just need something that works.</p>
+<hr>
+<h2>Why Simple Wins</h2>
+<h4>1. Speed is Everything</h4>
+<p>When your website loads quickly, your visitors stick around. Google loves fast sites. Your customers love fast sites. We optimize image sizes, reduce code bloat, and build with speed in mind — whether it’s on WordPress, Shopify, WooCommerce, Webflow, or just straight HTML/CSS.</p>
+<h4>2. Clear Messaging Converts</h4>
+<p>A simple site puts your message front and center. No distractions, no confusing navigation, no 20-second loading intros. Just: who you are, what you do, and how to contact you — plain and simple.</p>
+<h4>3. Less to Break, Easier to Maintain</h4>
+<p>The more moving parts a site has, the more that can go wrong. Complex animations and overloaded plug-ins might look cool (for a minute), but they can slow down your site, break with updates, or create accessibility issues. Simple sites are easier to keep running smoothly.</p>
+<h4>4. Search Engines Love Clean Code</h4>
+<p>We implement solid technical SEO practices — including schema markup, compressed assets, and clean structure — so your website can rank better and show up more clearly in search results. That’s what matters.</p>
+<hr>
+<h3>Quality Over Gimmicks</h3>
+<p>Your website is your digital storefront. It doesn’t need to win design awards — it needs to get your customer from point A to point B without friction.</p>
+<p>We don’t sell fluff. We don’t pad the box. We build small business websites that are fast, clean, and focused. Whether you need a one-page site, a small e-commerce store, or a custom build, we keep it simple — and effective.</p>
+<p>Just like Tommy Boy, we’d rather sell something that <em>works</em> than slap a fancy label on something that doesn’t.</p>
+</article>
+
+<script type="application/ld+json">
+  {
+  	"@type": "BlogPosting",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Keep It Simple - Why Small Businesses Win with Simple Websites",
+    "image": "https://capitalwebcompany.com/img/og-image.png",
+    "description": "You can take a dump in a box and mark it ‘guaranteed,’ but all you&#39;re buying is a guaranteed piece of crap.",
+    "type": "object",
+    "properties": {
+      "headline": {
+        "type": "string",
+        "description": "Keep It Simple - Why Small Businesses Win with Simple Websites"
+      },
+      "datePublished": {
+        "type": "string",
+        "format": "date-time",
+        "description": "01-06-25"
+      },
+      "author": {
+        "type": "object",
+        "description": "The author of the article",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Capital Web Company"
+          },
+          "url": {
+            "type": "string",
+            "format": "url",
+            "description": "https//capitalwebcomapny.com"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "articleBody": {
+        "type": "string",
+        "description": "<h1>Keep It Simple: Why Small Businesses Win with Simple Websites</h1>
+<p>There’s a classic line from the movie <em>Tommy Boy</em> that gets laughs — but also makes a great point about quality over flash. While selling brake pads, Tommy says:</p>
+<blockquote>
+<p>&quot;You can take a dump in a box and mark it ‘guaranteed,’ but all you're buying is a guaranteed piece of crap.&quot;</p>
+</blockquote>
+<p>That quote sticks with you — because it's true. The flashiest packaging doesn’t always deliver the best product. And the same applies to websites.</p>
+<p>At <strong>Capital Web Company</strong>, we believe your website doesn’t need to be overloaded with animations, complex layouts, or slow-loading graphics to be effective. In fact, simpler websites often <em>perform better</em>, especially for small businesses that just need something that works.</p>
+<hr>
+<h2>Why Simple Wins</h2>
+<h4>1. Speed is Everything</h4>
+<p>When your website loads quickly, your visitors stick around. Google loves fast sites. Your customers love fast sites. We optimize image sizes, reduce code bloat, and build with speed in mind — whether it’s on WordPress, Shopify, WooCommerce, Webflow, or just straight HTML/CSS.</p>
+<h4>2. Clear Messaging Converts</h4>
+<p>A simple site puts your message front and center. No distractions, no confusing navigation, no 20-second loading intros. Just: who you are, what you do, and how to contact you — plain and simple.</p>
+<h4>3. Less to Break, Easier to Maintain</h4>
+<p>The more moving parts a site has, the more that can go wrong. Complex animations and overloaded plug-ins might look cool (for a minute), but they can slow down your site, break with updates, or create accessibility issues. Simple sites are easier to keep running smoothly.</p>
+<h4>4. Search Engines Love Clean Code</h4>
+<p>We implement solid technical SEO practices — including schema markup, compressed assets, and clean structure — so your website can rank better and show up more clearly in search results. That’s what matters.</p>
+<hr>
+<h3>Quality Over Gimmicks</h3>
+<p>Your website is your digital storefront. It doesn’t need to win design awards — it needs to get your customer from point A to point B without friction.</p>
+<p>We don’t sell fluff. We don’t pad the box. We build small business websites that are fast, clean, and focused. Whether you need a one-page site, a small e-commerce store, or a custom build, we keep it simple — and effective.</p>
+<p>Just like Tommy Boy, we’d rather sell something that <em>works</em> than slap a fancy label on something that doesn’t.</p>
+"
+      },
+      "description": {
+        "type": "string",
+        "description": "You can take a dump in a box and mark it ‘guaranteed,’ but all you&#39;re buying is a guaranteed piece of crap.}"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "CSS, Tailwind, WordPress, Webflow, Shopify, Wix, Squarespace, HTML,SEO}"
+      }
+    },
+    "required": [
+      "headline",
+      "datePublished",
+      "author",
+      "articleBody"
+    ]
+  }
+</script>
+    </main>
+
+
+
+    <footer class="rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+            <script>document.write(/\d{4}/.exec(Date())[0])</script>
+           <a href="https://capitalwebcompany.com/" class="hover:underline">Capital Web Company</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="/work" class="hover:underline me-4 md:me-6">Work</a>
+            </li>
+            <li>
+                <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="/contact" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+
+    <!-- <script src="/assets/main.js"></script> -->
+    <script src="/capital-web-company/assets/main.js"></script>
+    
+  </body>
+</html>
