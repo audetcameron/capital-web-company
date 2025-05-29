@@ -50,7 +50,13 @@ eleventyNavigation:
 
         <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Chat via {{ item.name }}</h2>
         <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Speak to our friendly team.</p>
+        {% if item.name == "E-Mail" %}
+        <div class="mt-4 text-sm text-blue-500 dark:text-blue-400">
+          <object class="email" width="38" height="30" data="{{ '/img/email.svg' | url }}" type="image/svg+xml"></object>
+        </div>
+        {% else %}
         <p class="mt-2 text-sm text-blue-500 dark:text-blue-400"><a href="{{ item.link }}">{{ item.name }}</a></p>
+        {% endif %}
       </div>
       {% endfor %}
 

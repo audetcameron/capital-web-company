@@ -1,0 +1,21 @@
+<svg viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+/*@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap');
+
+text {
+	dominant-baseline: middle;
+	fill: #3b82f6;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	text-anchor: middle;
+	color:blue;
+}
+</style>
+
+<a href="mailto:websites@capitalwebcompany.com">
+	<text x="50%" y="50%">email</text>
+</a>
+
+</svg>

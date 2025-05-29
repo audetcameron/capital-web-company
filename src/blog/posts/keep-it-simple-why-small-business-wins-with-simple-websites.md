@@ -4,6 +4,7 @@ title: Keep It Simple - Why Small Businesses Win with Simple Websites
 description: You can take a dump in a box and mark it ‘guaranteed,’ but all you're buying is a guaranteed piece of crap.
 date: 2025-06-01
 keywords: CSS, Tailwind, WordPress, Webflow, Shopify, Wix, Squarespace, HTML,SEO
+image: og-image.png
 ---
 
 # Keep It Simple: Why Small Businesses Win with Simple Websites

@@ -4,5 +4,6 @@ module.exports = {
   siteDescription:
     "Because sometimes you just need a simple website. Who you are, what you do, and why people should care. Let's make it simple.",
   authorName: "capitalwebcompany",
-  twitterUsername: "foo", // no `@`
+  twitterUsername: "foo", // no `@`,
+  defaultImage:"https://capitalwebcompany.com/img/og-image.png"
 };

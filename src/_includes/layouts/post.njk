@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 <time>{{ date | readableDate }}</time>
 
-<article class="prose lg:prose prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600 prose-ul:p4">
+<article class=" bg-white dark:bg-zinc-800 dark:text-white prose lg:prose prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600 prose-ul:p4">
 
 <!-- <h1 class="text-3xl mb-8">{{title}}</h1> -->
 
@@ -11,19 +11,21 @@ layout: layouts/base.njk
 
 <script type="application/ld+json">
   {
+  	"@type": "BlogPosting",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Article",
-    "description": "Schema for an article or blog post",
+    "title": "{{title}}",
+    "image": "https://capitalwebcompany.com/img/{{image}}",
+    "description": "{{description}}",
     "type": "object",
     "properties": {
       "headline": {
         "type": "string",
-        "description": "The Ultimate Technical SEO Checklist for 2025"
+        "description": "{{title}}"
       },
       "datePublished": {
         "type": "string",
         "format": "date-time",
-        "description": "2025-27-05"
+        "description": "{{ date | readableDate }}"
       },
       "author": {
         "type": "object",
@@ -42,14 +44,6 @@ layout: layouts/base.njk
         "required": [
           "name"
         ]
-      },
-      "image": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "format": "url"
-        },
-        "description": "Array of image URLs associated with the article"
       },
       "articleBody": {
         "type": "string",
