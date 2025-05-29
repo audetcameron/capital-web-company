@@ -5,6 +5,9 @@ Git Hub Pages Assets
 
 For GitHub Pages
 "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'",
+"build-ghpages": "npx @11ty/eleventy --pathprefix 'capital-web-company'" --didn't work
+
+Trying the action instead of build from gh-pages
 
 # Minimal 11ty Starter
 
