@@ -7,7 +7,9 @@ For GitHub Pages
 "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'",
 "build-ghpages": "npx @11ty/eleventy --pathprefix 'capital-web-company'" --didn't work
 
-Trying the action instead of build from gh-pages
+Trying the action instead of build from gh-pages - no dice. but I did find..
+
+running package.json "build-ghpages": "NODE_ENV=production run-s clean build:*" in github actions seemd to do the trick!
 
 # Minimal 11ty Starter
 
