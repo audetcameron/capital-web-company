@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(UpgradeHelper);
 
+  eleventyConfig.addPassthroughCopy("CNAME");
+
   const {
     DateTime
   } = require("luxon");
