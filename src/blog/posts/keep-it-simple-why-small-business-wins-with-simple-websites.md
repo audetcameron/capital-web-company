@@ -15,7 +15,7 @@ There’s a classic line from the movie *Tommy Boy* that gets laughs — but als
 
 That quote sticks with you — because it's true. The flashiest packaging doesn’t always deliver the best product. And the same applies to websites.
 
-At **Capital Web Company**, we believe your website doesn’t need to be overloaded with animations, complex layouts, or slow-loading graphics to be effective. In fact, simpler websites often *perform better*, especially for small businesses that just need something that works.
+At **Capital Web Company**, we believe your website doesn’t need to be overloaded with animations, complex layouts, or slow-loading graphics to be effective. In fact, simpler websites often *perform better*, especially for small businesses that just need something that works. There has always been the case of Sliders... are they good or bad.  What about hero videos? Do they work? Do they slow down the user experience in favor of looking nice?  I like to point out craigslist.org and it's success.
 
 ---
 
@@ -35,9 +35,7 @@ We implement solid technical SEO practices — including schema markup, compress
 
 ---
 
-### Quality Over Gimmicks
 
-Your website is your digital storefront. It doesn’t need to win design awards — it needs to get your customer from point A to point B without friction.
 
 We don’t sell fluff. We don’t pad the box. We build small business websites that are fast, clean, and focused. Whether you need a one-page site, a small e-commerce store, or a custom build, we keep it simple — and effective.
 
